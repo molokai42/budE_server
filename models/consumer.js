@@ -26,7 +26,6 @@ export default (sequelize, DataTypes) => {
         field: 'consumer_id',
       },
     });
-
-    return Consumer;
   };
+  return Consumer;
 };

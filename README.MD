@@ -1,1 +1,0 @@
-This is the server for the Cannabis delivery/SAAS application, web and mobile, that I am currently building. 
