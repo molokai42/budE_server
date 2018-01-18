@@ -1,4 +1,3 @@
-
 export default `
 
 type Dispensary {
@@ -12,9 +11,14 @@ type Query {
   getDispensary(id: Int!): Dispensary!
   allDispensaries: [Dispensary!]!
 }
+type DispensaryRegisterResponse {
+  ok: Boolean!
+  dispensary: Dispensary
+  errors: [Error!]
+}
 
 type Mutation {
-  createDispensary(displayname: String!, email: String!, password: String!): Dispensary!
+  registerDispensary(displayname: String!, email: String!, password: String!): DispensaryRegisterResponse!
 }
 
 `;

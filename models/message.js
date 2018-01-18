@@ -17,6 +17,12 @@ export default (sequelize, DataTypes) => {
         field: 'consumer_id',
       },
     });
+    Message.belongsTo(models.User, {
+      foreignKey: {
+        name: 'userId',
+        field: 'user_id',
+      },
+    });
   };
 
   return Message;
